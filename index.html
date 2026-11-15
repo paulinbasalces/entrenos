@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="pt-BR">
+<!--
+ * Site: Entre Nós — A Biblioteca Viva
+ * Nicho: Portal educativo e comunitário sobre não-monogamias
+ * Conceito: Biblioteca arcanográfica (tarô + quadrinhos + curadoria viva)
+ * Data: 2026-11-16
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entre Nós · A Biblioteca Viva — o portal das não-monogamias</title>
+  <meta name="description" content="Portal ilustrado sobre não-monogamias: biblioteca de livros, podcasts e filmes, mapa das formas de amar e rodas de conversa sem julgamento.">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://estudio-basalces.github.io/entre-nos/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Entre Nós · A Biblioteca Viva">
+  <meta property="og:description" content="Entender, escolher e viver a não-monogamia — com curadoria, mapas simbólicos e conversa franca.">
+  <meta property="og:url" content="https://estudio-basalces.github.io/entre-nos/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 27C10 22 5 18 5 12.5 5 8.8 7.8 6 11 6c2 0 3.6 1 5 2.8C17.4 7 19 6 21 6c3.2 0 6 2.8 6 6.5C27 18 22 22 16 27Z' fill='none' stroke='%238e2fd4' stroke-width='2.6' stroke-linejoin='round'/%3E%3Cpath d='M11 21l5-13 5 13M12.6 17h6.8' fill='none' stroke='%23ffd21e' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IM+Fell+English:ital@0;1&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#130a19">
+</head>
+<body class="dark-mode">
+<script>
+(function(){try{var t=localStorage.getItem('en-theme');if(t==='light')document.body.classList.remove('dark-mode');}catch(e){}})();
+</script>
+<a class="skip" href="#conteudo">Ir para o conteúdo principal</a>
+
+<svg style="display:none" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-mark" viewBox="0 0 32 32"><path d="M16 27C10 22 5 18 5 12.5 5 8.8 7.8 6 11 6c2 0 3.6 1 5 2.8C17.4 7 19 6 21 6c3.2 0 6 2.8 6 6.5C27 18 22 22 16 27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 21l5-13 5 13M12.6 17h6.8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C10 3.6 6.2 3.6 4 4.2v15c2-.6 5.8-.6 8 .8 2.2-1.4 6-1.4 8-.8V4.2c-2.2-.6-6-.6-8 .8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 5v15" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 10.5a7 7 0 0 0 14 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 17.5V21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 9.5h18M3 14.5h18M9 4v16" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8.2l5.6 3.8L10 15.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6a2 2 0 0 1 2 2v6M10 20H4a2 2 0 0 1-2-2v-6M6 18 20 4M14 4h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="g-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.4V5M12 19v2.6M2.4 12H5M19 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="g-moons" viewBox="0 0 24 24"><path d="M9.6 4.8a7.2 7.2 0 1 0 0 14.4 5.8 5.8 0 0 1 0-14.4Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M14.4 19.2a7.2 7.2 0 1 0 0-14.4 5.8 5.8 0 0 1 0 14.4Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="g-wheel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.6v16.8M3.6 12h16.8M6.2 6.2l11.6 11.6M17.8 6.2L6.2 17.8" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="g-door" viewBox="0 0 24 24"><path d="M6 20.5v-8.5a6 6 0 0 1 12 0v8.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M6 20.5h12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 12v8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="15.6" cy="15.4" r="1.1" fill="currentColor"/><path d="M12 2.2l1.5 3 3.3.5-2.4 2.3.6 3.2L12 8.6 8.6 11.2l.6-3.2L6.8 5.7l3.3-.5L12 2.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="g-comet" viewBox="0 0 24 24"><circle cx="7.5" cy="9.5" r="3.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10.2 12c4 1 7 4.2 9 8.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M9 13.5c2 3 3.4 6.2 4 9.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M11.2 8.5c3.6-1.1 7.2-1 10 .6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="19.5" cy="5" r="1" fill="currentColor"/></symbol>
+  <symbol id="g-lantern" viewBox="0 0 24 24"><path d="M12 2.8v2.7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M8.4 9h7.2l1.2 6.4a4.8 4.8 0 0 1-9.6 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 11.4v3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 12.4H5.4M18.6 12.4h-2.6M8.4 9a3.6 3.6 0 0 1 7.2 0" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="g-net" viewBox="0 0 24 24"><path d="M5 7l7-1.6 6.4 2.6-3 7-7 2.2-3.2-3.4L5 7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M11.8 5.5 8.6 14.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="5" cy="7" r="1.7" fill="currentColor"/><circle cx="12" cy="4.2" r="1.7" fill="currentColor"/><circle cx="18.4" cy="8" r="1.7" fill="currentColor"/><circle cx="15.4" cy="15" r="1.7" fill="currentColor"/><circle cx="8.4" cy="17.2" r="1.7" fill="currentColor"/><circle cx="5.2" cy="13.8" r="1.7" fill="currentColor"/><circle cx="11.8" cy="11.2" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="g-seal" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.4l1.9 3.9 4.3.6-3.1 3 .7 4.3-3.8-2-3.8 2 .7-4.3-3.1-3 4.3-.6L12 3.4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-owl" viewBox="0 0 48 48"><circle cx="24" cy="20.5" r="15.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.5 7.5l3.4 6.4-5.6 1.1ZM35.5 7.5l-3.4 6.4 5.6 1.1Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="18" cy="19.5" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="19.5" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="19.5" r="1.6" fill="currentColor"/><circle cx="30" cy="19.5" r="1.6" fill="currentColor"/><path d="M24 24l-2.6 3.6h5.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18.5 31q5.5 3.4 11 0l-1.8 6.2q-3.7 2.6-7.4 0L18.5 31Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 37.2V41" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<header class="site">
+  <div class="hinner">
+    <a class="brand" href="#inicio" aria-label="Entre Nós — voltar ao início">
+      <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="wordmark"><span class="wm-a">Entre</span><span class="wm-b">Nós</span><span class="wm-dot" aria-hidden="true">✦</span></span>
+    </a>
+    <div class="hactions">
+      <button class="tbtn" id="themeBtn" type="button" aria-label="Alternar tema claro e escuro">
+        <svg class="ico-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="ico-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="prog" id="prog"></div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="inicio" aria-labelledby="ttl-hero">
+    <svg class="astro" viewBox="0 0 600 420" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <g stroke="var(--gold)" stroke-width="1.2" opacity=".8"><circle cx="430" cy="220" r="95"/><circle cx="430" cy="220" r="148"/><circle cx="430" cy="220" r="205" stroke-dasharray="2 7"/></g>
+      <path d="M150 96l4 8.4 9 1.3-6.5 6.3 1.5 9-8-4.2-8 4.2 1.5-9-6.5-6.3 9-1.3 4-8.4Z" fill="none" stroke="var(--accent)" stroke-width="1.4" opacity=".9"/>
+      <path d="M118 318a26 26 0 1 0 0 52 20 20 0 0 1 0-52Z" fill="none" stroke="var(--plum)" stroke-width="1.4" opacity=".8"/>
+      <g fill="var(--gold)" opacity=".9"><circle cx="292" cy="60" r="2"/><circle cx="520" cy="120" r="2"/><circle cx="548" cy="330" r="2"/><circle cx="332" cy="368" r="2"/><circle cx="196" cy="250" r="1.6"/></g>
+    </svg>
+    <span class="blob b1" aria-hidden="true"></span>
+    <div class="hero-grid wrap">
+      <div class="reveal">
+        <p class="eyebrow">Edição ilustrada</p>
+        <h1 class="hero-title" id="ttl-hero">Um lugar para <em>entender</em>, <em>escolher</em> e <em>viver</em> a não-monogamia.</h1>
+        <p class="hero-lede">Uma biblioteca viva para chegar, ficar e explorar: estantes com o essencial, mapas simbólicos das formas de amar e rodas de conversa em clima de quadrinho — sem julgamento, sem pressa e com muita curiosidade.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#trilha">Começar pela trilha <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn" href="#mapa">Explorar o mapa</a>
+        </div>
+        <ul class="chips-row" aria-label="Temas centrais do portal">
+          <li>Poliamor</li><li>Relações abertas</li><li>Anarquia relacional</li><li>Amizades radicais</li>
+        </ul>
+      </div>
+      <div class="deck reveal" role="img" aria-label="Três cartas-guia: O Sol, As Duas Luas e A Constelação, representando amor plural, escuta mútua e redes de cuidado.">
+        <div class="tcard tc1"><div class="tc-rune">Arcano I</div><div class="tc-face"><div class="tc-icon"><svg aria-hidden="true"><use href="#g-sun"/></svg></div><strong>O Sol</strong><span>Amor plural, radiante e aberto — múltiplas luzes sem apagar nenhuma.</span></div></div>
+        <div class="tcard tc2"><div class="tc-rune">Arcano II</div><div class="tc-face"><div class="tc-icon"><svg aria-hidden="true"><use href="#g-moons"/></svg></div><strong>As Duas Luas</strong><span>Escuta mútua: dois luminares que se olham e negociam órbitas.</span></div></div>
+        <div class="tcard tc3"><div class="tc-rune">Arcano III</div><div class="tc-face"><div class="tc-icon"><svg aria-hidden="true"><use href="#g-net"/></svg></div><strong>A Constelação</strong><span>Redes de cuidado: vínculos que se sustentam como pontos de uma trama.</span></div></div>
+      </div>
+      <p class="deck-cap reveal">símbolos-guia desta edição — um mapa afetivo desenhado em linguagem de arcano</p>
+    </div>
+  </section>
+
+  <!-- ======================= DOCK (navegação única) ======================= -->
+  <nav class="dock reveal" id="docknav" aria-label="Navegação principal">
+    <div class="dock-inner">
+      <span class="dock-hint" aria-hidden="true">✦</span>
+      <a href="#inicio">Início</a>
+      <a href="#trilha">Trilha</a>
+      <a href="#mapa">Mapa das formas</a>
+      <a href="#biblioteca">Biblioteca</a>
+      <a href="#conversas">Conversas</a>
+      <a href="#faq">Perguntas</a>
+    </div>
+  </nav>
+
+  <!-- ======================= TRILHA DE APRENDIZADO ======================= -->
+  <section class="section" id="trilha" aria-labelledby="ttl-trilha">
+    <div class="wrap">
+      <div class="reveal" style="max-width:70ch">
+        <p class="eyebrow">Mini-curso livre</p>
+        <h2 id="ttl-trilha">Trilha de aprendizado.</h2>
+        <p class="lede">Seis paradas pensadas para quem está começando do zero. Cada módulo sugere o que consumir antes de avançar — mas a ordem é um convite, não uma regra. Volte, pule, releia. O ritmo é seu.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <!-- MÓDULO I -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">I</div>
+          <article class="timeline-card">
+            <h3>Desmistificar</h3>
+            <p class="tl-lead">Antes de qualquer rótulo, entender o que a não-monogamia é — e, principalmente, o que ela não é.</p>
+            <ul class="tl-list">
+              <li><svg aria-hidden="true"><use href="#i-book"/></svg>Leia: <b>O Desafio Poliamoroso</b> (Brigitte Vasallo) — o alerta necessário.</li>
+              <li><svg aria-hidden="true"><use href="#i-play"/></svg>Assista: <b>Mariana Ribeiro no Sem Censura</b> — ponto de partida em linguagem clara.</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Abra o <a href="#faq">FAQ</a> e tire as dúvidas mais comuns.</li>
+            </ul>
+            <a class="tl-next" href="#mapa">Próxima parada: o mapa das formas <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+
+        <!-- MÓDULO II -->
+        <div class="timeline-item right">
+          <div class="timeline-dot">II</div>
+          <article class="timeline-card">
+            <h3>Conhecer as formas</h3>
+            <p class="tl-lead">Poliamor, relação aberta, swing, anarquia relacional, pluralidade solo, amizades radicais. Nenhuma é etapa da outra.</p>
+            <ul class="tl-list">
+              <li><svg aria-hidden="true"><use href="#i-book"/></svg>Leia: <b>Anarquia Relacional</b> (Juan-Carlos Pérez-Cortés) — o manifesto.</li>
+              <li><svg aria-hidden="true"><use href="#i-play"/></svg>Ouça: <b>É Tudo Culpa da Cultura nº4</b> — antropólogos em conversa.</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Percorra o <a href="#mapa">Mapa das formas</a> e veja os glifos-guia.</li>
+            </ul>
+            <a class="tl-next" href="#biblioteca">Próxima parada: primeiras leituras <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+
+        <!-- MÓDULO III -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">III</div>
+          <article class="timeline-card">
+            <h3>Primeiras leituras</h3>
+            <p class="tl-lead">Três livros e um podcast para construir base teórica e afetiva antes de qualquer conversa externa.</p>
+            <ul class="tl-list">
+              <li><svg aria-hidden="true"><use href="#i-book"/></svg><b>More Than Two</b> (Veaux &amp; Rickert) — a bíblia da ética poliamorosa.</li>
+              <li><svg aria-hidden="true"><use href="#i-book"/></svg><b>Relações abertas e não monogâmicas</b> (Deborah Landim) — 100 perguntas práticas.</li>
+              <li><svg aria-hidden="true"><use href="#i-mic"/></svg>Ouça: <b>Podpoli</b> — episódios semanais leves e generosos.</li>
+            </ul>
+            <a class="tl-next" href="#biblioteca">Ver a biblioteca completa <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+
+        <!-- MÓDULO IV -->
+        <div class="timeline-item right">
+          <div class="timeline-dot">IV</div>
+          <article class="timeline-card">
+            <h3>Conversa interna</h3>
+            <p class="tl-lead">Antes de falar com qualquer pessoa, entender o que você sente, quer e teme. Ciúme, compersion, limites.</p>
+            <ul class="tl-list">
+              <li><svg aria-hidden="true"><use href="#i-book"/></svg>Leia: <b>Descolonizando afetos</b> (Geni Núñez) — para repensar o script herdado.</li>
+              <li><svg aria-hidden="true"><use href="#i-mic"/></svg>Ouça: <b>Viagem com a Dri</b> — fissuras do amor romântico e papéis de gênero.</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Anote: o que te assusta? O que te atrai? O que é inegociável?</li>
+            </ul>
+            <a class="tl-next" href="#conversas">Próxima parada: conversa externa <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+
+        <!-- MÓDULO V -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">V</div>
+          <article class="timeline-card">
+            <h3>Conversa externa</h3>
+            <p class="tl-lead">Como trazer o assunto com a parceria atual — sem ultimato, sem pressa, com curiosidade.</p>
+            <ul class="tl-list">
+              <li><svg aria-hidden="true"><use href="#i-play"/></svg>Assista: <b>Não Monogamia Sem Regras</b> (Globoplay) — casais em diálogo real.</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Leia a resposta da pergunta 03 do <a href="#faq">FAQ</a> — um roteiro prático.</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Proponha uma leitura compartilhada antes de qualquer decisão.</li>
+            </ul>
+            <a class="tl-next" href="#conversas">Próxima parada: a roda <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+
+        <!-- MÓDULO VI -->
+        <div class="timeline-item right">
+          <div class="timeline-dot">VI</div>
+          <article class="timeline-card">
+            <h3>Aprofundamento</h3>
+            <p class="tl-lead">Para quem quer ir além: recortes de raça, gênero, antropologia brasileira e ficção que ensina.</p>
+            <ul class="tl-list">
+              <li><svg aria-hidden="true"><use href="#i-book"/></svg><b>Negritude e não monogamia</b> (Rhuann Fernandes) — micropolíticas do amor negro.</li>
+              <li><svg aria-hidden="true"><use href="#i-book"/></svg><b>Não-monogamias no Brasil</b> (Antonio Cerdeira Pilão) — pesquisa recente.</li>
+              <li><svg aria-hidden="true"><use href="#i-film"/></svg>Assista: <b>Lov3</b> (Amazon) ou <b>Jules e Jim</b> — ficção que educa o olhar.</li>
+            </ul>
+            <p class="tl-end">Aqui a trilha se dissolve na biblioteca. Volte quando quiser — ou siga em frente, no seu tempo.</p>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MAPA ======================= -->
+  <section class="section" id="mapa" aria-labelledby="ttl-mapa">
+    <div class="wrap">
+      <div class="reveal" style="max-width:72ch">
+        <p class="eyebrow">O mapa das possibilidades</p>
+        <h2 id="ttl-mapa">Não existe um único jeito de viver.</h2>
+        <p class="lede">Não-monogamia é uma palavra guarda-chuva que abriga muitos arranjos diferentes entre si. Conheça alguns dos mais comuns — sem escala evolutiva e sem ranking de superioridade. Cada porta tem seu símbolo-guia.</p>
+      </div>
+      <div class="grid g3 mt-l reveal" data-fx="rise">
+        <article class="card"><div class="chip-icon"><svg aria-hidden="true"><use href="#g-sun"/></svg></div><h3>Poliamor</h3><p>Vínculos românticos e afetivos com mais de uma pessoa ao mesmo tempo, com ciência e consentimento de todas as partes envolvidas.</p><p class="attention">Costuma combinar com quem sonha em amar pluralmente sem esconder nada de ninguém. Atenção: pede negociação emocional constante.</p></article>
+        <article class="card"><div class="chip-icon"><svg aria-hidden="true"><use href="#g-door"/></svg></div><h3>Relação aberta</h3><p>Um vínculo principal segue sendo prioridade e casa, enquanto há liberdade negociada para outros encontros afetivos ou sexuais.</p><p class="attention">Combina com casais que querem preservar a dupla e ampliar possibilidades. Atenção: combinados precisam ser revisitados com frequência.</p></article>
+        <article class="card"><div class="chip-icon"><svg aria-hidden="true"><use href="#g-wheel"/></svg></div><h3>Swing &amp; trocas</h3><p>Casais que compartilham experiências sexuais entre si, com regras claras, rituais próprios e forte clima de comunidade.</p><p class="attention">Agrada quem gosta de ambientes, festas e leveza. Atenção: abertura sexual nem sempre acompanha a emocional — alinhar expectativa é tudo.</p></article>
+        <article class="card"><div class="chip-icon"><svg aria-hidden="true"><use href="#g-comet"/></svg></div><h3>Anarquia relacional</h3><p>Menos rótulos e menos hierarquias: os vínculos se organizam por autonomia, amizade e desejo, sem scripts prontos de casal.</p><p class="attention">Combina com quem desconfia de etiquetas e valoriza amizades profundas. Atenção: exige maturidade e conversas honestas contínuas.</p></article>
+        <article class="card"><div class="chip-icon"><svg aria-hidden="true"><use href="#g-lantern"/></svg></div><h3>Pluralidade solo</h3><p>Uma vida afetiva rica em conexões sem necessariamente manter um par romântico fixo como centro da existência.</p><p class="attention">Para quem se sente inteiro(a) desse jeito e prefere prioridades fluidas. Atenção: solitude não é isolamento — construir rede importa.</p></article>
+        <article class="card"><div class="chip-icon"><svg aria-hidden="true"><use href="#g-net"/></svg></div><h3>Amizades radicais</h3><p>Amizades como família escolhida: criação compartilhada, colares, cuidado mútuo e pertencimento para além da linhagem.</p><p class="attention">Para quem acredita que todo mundo merece ter tribo. Atenção: cuidar dos combinados evita mágoas — inclusive com metas sociais.</p></article>
+      </div>
+      <div class="callout reveal"><div class="cc-icon"><svg aria-hidden="true"><use href="#g-seal"/></svg></div><div>
+        <h4>Sem escadinha, sem evolução obrigatória</h4>
+        <p>Essas formas convivem, se cruzam e mudam de nome. Nenhuma é etapa anterior de outra e nenhuma é melhor que as demais. O critério que importa é ético, não estético: consentimento informado, transparência e cuidado.</p>
+      </div></div>
+      <div class="reveal">
+        <h3 class="subttl mt-l">Palavras que vão aparecer por aqui</h3>
+        <div class="glossary">
+          <div class="term"><b>Compersion</b><span>A alegria sincera pelo prazer e pelas relações do outro — mesmo quando elas não incluem você.</span></div>
+          <div class="term"><b>Metamor</b><span>As pessoas parceiras de quem você ama: parentesco por afinidade dentro da rede afetiva.</span></div>
+          <div class="term"><b>Polycule</b><span>A teia formada por todas as pessoas relacionadas a você romanticamente, direto ou indireto.</span></div>
+          <div class="term"><b>Limite × acordo</b><span>Limite é o que você precisa para estar bem. Acordo é o combinado conjunto que sustenta o pacto.</span></div>
+          <div class="term"><b>CNV</b><span>Comunicação Não Violenta: observar, expressar sentimentos, assumir responsabilidade e pedir com clareza.</span></div>
+          <div class="term"><b>Script</b><span>O roteiro herdado — paixão, casamento, exclusividade — que cada pessoa pode refazer à mão.</span></div>
+        </div>
+      </div>
+      <p class="note-foot reveal"><b>Nota de método:</b> os glifos usados nesta seção são invenções internas desta casa — uma linguagem visual para navegar, não um oráculo. Nenhum simbolismo substitui a conversa franca entre as pessoas envolvidas.</p>
+    </div>
+  </section>
+
+  <!-- ======================= BIBLIOTECA ======================= -->
+  <section class="section" id="biblioteca" aria-labelledby="ttl-bib" style="background:linear-gradient(180deg,transparent,var(--bg2) 12%,var(--bg2) 88%,transparent)">
+    <div class="wrap">
+      <div class="reveal" style="max-width:72ch">
+        <p class="eyebrow">Curadoria viva</p>
+        <h2 id="ttl-bib">Biblioteca para abrir portas.</h2>
+        <p class="lede">Materiais para começar, aprofundar, discordar e se divertir. A lista cresce aos poucos e aceita indicações.</p>
+      </div>
+      <div class="tabs reveal" data-tabs>
+        <div class="tablist" role="tablist" aria-label="Categorias da biblioteca">
+          <button role="tab" id="tb-books" aria-controls="panel-books" aria-selected="true" tabindex="0">Livros</button>
+          <button role="tab" id="tb-pods" aria-controls="panel-pods" aria-selected="false" tabindex="-1">Podcasts</button>
+          <button role="tab" id="tb-films" aria-controls="panel-films" aria-selected="false" tabindex="-1">Filmes &amp; séries</button>
+          <button role="tab" id="tb-videos" aria-controls="panel-videos" aria-selected="false" tabindex="-1">Vídeos &amp; entrevistas</button>
+        </div>
+
+        <div class="panel tabpanel" id="panel-books" role="tabpanel" aria-labelledby="tb-books">
+          <div class="filterbar" aria-label="Filtrar livros">
+            <button class="fpill" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="fpill" data-filter="br" aria-pressed="false">Brasileiros</button>
+            <button class="fpill" data-filter="guia" aria-pressed="false">Guias práticos</button>
+            <button class="fpill" data-filter="pensamento" aria-pressed="false">Crítica &amp; pensamento</button>
+            <button class="fpill" data-filter="raca" aria-pressed="false">Raça &amp; gênero</button>
+            <span class="count" aria-live="polite"></span>
+          </div>
+          <div class="items">
+            <article class="item" data-tags="pensamento"><div class="cover c1"><span class="year">2022</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>O Desafio Poliamoroso</h4><p class="meta">Brigitte Vasallo · ensaio</p><p class="blurb">Alerta necessário: o poliamor não é automaticamente libertador — também pode reproduzir as lógicas que queremos desmontar. Leitura indispensável para ir além do discurso bonito.</p><a class="ext" href="https://www.amazon.com.br/dp/6587235778" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="pensamento"><div class="cover c4"><span class="year">2024</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Anarquia Relacional</h4><p class="meta">Juan-Carlos Pérez-Cortés</p><p class="blurb">A revolução começa nos vínculos: contra toda hierarquia que decide o valor de uma relação pela sua forma. Manifesto apaixonante para leitores(as) de qualquer nível.</p><a class="ext" href="https://www.amazon.com.br/dp/8409678918" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="pensamento br"><div class="cover c2"><span class="year">2023</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Descolonizando afetos</h4><p class="meta">Geni Núñez</p><p class="blurb">Experimentações sobre outras formas de amar a partir de saberes indígenas e LGBTQIA+. Muda a forma de ver toda a cena não-monogâmica brasileira.</p><a class="ext" href="https://www.amazon.com.br/Descolonizando-afetos-Experimenta%C3%A7%C3%B5es-outras-formas/dp/8542223799" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="br pensamento"><div class="cover c3"><span class="year">2025</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Não-monogamias no Brasil</h4><p class="meta">Antonio Cerdeira Pilão</p><p class="blurb">Relacionamentos, moralidades e direitos em disputa: a pesquisa acadêmica mais recente sobre como as não-monogamias acontecem por aqui.</p><a class="ext" href="https://www.amazon.com.br/N%C3%A3o-monogamias-Brasil-relacionamentos-moralidades-direitos/dp/6554127186" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="br raca"><div class="cover c5"><span class="year">2022</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Negritude e não monogamia</h4><p class="meta">Rhuann Fernandes</p><p class="blurb">As micropolíticas do amor negro: raça, afeto e as fissuras do script monogâmico. Essencial para entender que a luta por liberdade afetiva passa pela justiça racial.</p><a class="ext" href="https://www.amazon.com.br/Negritude-n%C3%A3o-monogamia-micropol%C3%ADticas-amor/dp/8551844113" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="br raca pensamento"><div class="cover c1"><span class="year">2023</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Não Monogamia: trânsitos entre raça, gênero e sexualidade</h4><p class="meta">Andreone T. Medrado &amp; Rhuann Fernandes (orgs.)</p><p class="blurb">Coletânea que atravessa raça, gênero e sexualidade mostrando a não-monogamia como campo vivo de disputa, arte e produção de conhecimento situado.</p><a class="ext" href="https://www.amazon.com.br/N%C3%83O-MONOGAMIA-ADREONE-T-MEDRADO/dp/6554123393" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="pensamento"><div class="cover c6"><span class="year">2022</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Infinitos amores</h4><p class="meta">Antonio Cerdeira Pilão</p><p class="blurb">Um estudo antropológico sobre o poliamor brasileiro: cotidiano, ética e os jeitos encontrados por quem ama fora das linhas retas.</p><a class="ext" href="https://www.amazon.com.br/Infinitos-amores-estudo-antropol%C3%B3gico-poliamor/dp/6554120963" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="br guia"><div class="cover c2"><span class="year">2022</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Relatos Não Mono</h4><p class="meta">Bárbara Li Sarti (org.)</p><p class="blurb">Histórias reais de gente que vive o amor para além da monogamia — narrativas íntimas, imperfeitas e cheias de aprendizados práticos.</p><a class="ext" href="https://contosdesamsara.com.br/loja/ols/products/relatosnaomono" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="guia"><div class="cover c3"><span class="year">2021</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>Relações abertas e não monogâmicas</h4><p class="meta">Deborah Landim</p><p class="blurb">100 perguntas para conduzir conversas sobre vínculos, desejos e limites afetivos. Ótimo instrumento para casais e grupos começando a negociar combinados.</p><a class="ext" href="https://www.amazon.com.br/Rela%C3%A7%C3%B5es-abertas-n%C3%A3o-monog%C3%A2micas-perguntas/dp/655616691X" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="guia"><div class="cover c5"><span class="year">2017</span><div class="glyph"><svg aria-hidden="true"><use href="#i-book"/></svg></div></div><div class="item-body"><h4>More Than Two</h4><p class="meta">Franklin Veaux &amp; Eve Rickert</p><p class="blurb">O livro clássico da ética poliamorosa, escrito por quem viveu intensamente e sistematizou: comunicação radicalmente honesta como base de tudo.</p><a class="ext" href="https://www.amazon.com.br/dp/0991399706" target="_blank" rel="noopener">Onde encontrar <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+          </div>
+        </div>
+
+        <div class="panel tabpanel hidden" id="panel-pods" role="tabpanel" aria-labelledby="tb-pods">
+          <div class="filterbar" aria-label="Filtrar podcasts">
+            <button class="fpill" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="fpill" data-filter="relato" aria-pressed="false">Relatos pessoais</button>
+            <button class="fpill" data-filter="pratica" aria-pressed="false">Destaques &amp; prática</button>
+            <button class="fpill" data-filter="psique" aria-pressed="false">Psicologia &amp; afetos</button>
+            <button class="fpill" data-filter="raca" aria-pressed="false">Recorte racial</button>
+            <span class="count" aria-live="polite"></span>
+          </div>
+          <div class="items">
+            <article class="item" data-tags="relato pratica"><div class="cover c1"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>Podpoli</h4><p class="meta">Chris &amp; Ana · episódios semanais</p><p class="blurb">Dois veteranos da não-monogamia conversam com convidados sobre amor, rotinas e dilemas reais — leve e generoso para quem está chegando.</p><a class="ext" href="https://open.spotify.com/show/6FlMKaMBJfIORMKPxWxUHc" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="relato"><div class="cover c4"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>Resenhas Não-Mono</h4><p class="meta">Lê Andrade</p><p class="blurb">Em primeira pessoa, o dia a dia da não-monogamia vista por dentro: histórias, reflexões e resenhas que fazem pensar — e rir.</p><a class="ext" href="https://open.spotify.com/show/6VgibrgbeOunarZSsGdsme" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="relato psique"><div class="cover c2"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>Vida Não Mono</h4><p class="meta">Mayumi Sato</p><p class="blurb">Histórias, dramas, amores e desamores de quem escolheu algo diferente da lógica monogâmica. Narrativa envolvente, ideal para maratonar.</p><a class="ext" href="https://open.spotify.com/show/2A7cer5p2vSpyK3ImALAZ2" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="psique pratica"><div class="cover c3"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>Viagem com a Dri</h4><p class="meta">Adriana Ventura</p><p class="blurb">Professora e pesquisadora conduz uma jornada pelas fissuras do amor romântico e pelos papéis de gênero impostos às mulheres.</p><a class="ext" href="https://open.spotify.com/show/3H3rOjyO5vz2UPZQU23pBK" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="pratica"><div class="cover c5"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>Soluções Não Monogâmicas</h4><p class="meta">Luis Moreira</p><p class="blurb">Poliamor, amores livres e tudo o que pode existir neste novo mundo: temas cotidianos da vida sem o manual da monogamia, narrados com carinho.</p><a class="ext" href="https://open.spotify.com/show/706jbqamXdDfrB5QOOgJGm" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="pratica relato"><div class="cover c2"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>Temperos Não Mono</h4><p class="meta">Paola &amp; Leo</p><p class="blurb">Entrevistas e relatos em clima de cozinha cheia: tempero, escuta e conversas não monogâmicas conduzidas com muito cuidado pelos apresentadores.</p><a class="ext" href="https://open.spotify.com/show/5iTig6DugNwO298FGGFvXe" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="relato br"><div class="cover c4"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>RC Não Mono</h4><p class="meta">Rafael Camargo</p><p class="blurb">O mundo visto pela lente não mono: episódios curtos sobre cotidiano, preconceito e vitórias de quem vive fora do padrão, direto da banlieue paulistana.</p><a class="ext" href="https://open.spotify.com/show/4MRa2I6mnu481IwjfqB6zK" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="pensamento raca"><div class="cover c1"><span class="year">Episódio</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>É Tudo Culpa da Cultura nº4</h4><p class="meta">Michel Alcoforado &amp; Antônio Pilão</p><p class="blurb">Os antropólogos Michel Alcoforado e Antônio Cerdeira Pilão batem um papo esclarecedor sobre poliamor, cultura e desejo — boa porta de entrada acadêmica.</p><a class="ext" href="https://open.spotify.com/episode/3ZGmemzsi4NJuVNBWj19eL" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="pratica raca"><div class="cover c5"><span class="year">Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-mic"/></svg></div></div><div class="item-body"><h4>Eta Porra</h4><p class="meta">Cah Fernandes</p><p class="blurb">Psicóloga preta e bissexual discute ciúme, comunicação e o recorte racial dentro da não-monogamia, abrindo espaço para convidades nordestines.</p><a class="ext" href="https://open.spotify.com/show/3ZlBihY0HipKr7xbd3bwK6" target="_blank" rel="noopener">Ouvir no Spotify <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+          </div>
+        </div>
+
+        <div class="panel tabpanel hidden" id="panel-films" role="tabpanel" aria-labelledby="tb-films">
+          <div class="filterbar" aria-label="Filtrar filmes e séries">
+            <button class="fpill" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="fpill" data-filter="br" aria-pressed="false">Brasileiros</button>
+            <button class="fpill" data-filter="doc" aria-pressed="false">Docs &amp; realities</button>
+            <button class="fpill" data-filter="ficcao" aria-pressed="false">Ficção &amp; séries</button>
+            <span class="count" aria-live="polite"></span>
+          </div>
+          <div class="items">
+            <article class="item" data-tags="br doc"><div class="cover c6"><span class="year">2025</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Terceira Metade</h4><p class="meta">Reality · Brasil</p><p class="blurb">Quatro casais embarcam numa viagem em busca de uma terceira pessoa — um retrato pop do poliamor brasileiro, com condução de Deborah Secco.</p><a class="ext" href="https://pt.wikipedia.org/wiki/Terceira_Metade" target="_blank" rel="noopener">Saiba mais <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="ficcao"><div class="cover c4"><span class="year">2024</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Rivais</h4><p class="meta">Filme · EUA (Luca Guadagnino)</p><p class="blurb">Tensão, desejo e triangulações emocionantes: um olhar moderno e elegante sobre as formas de negociar vínculos.</p><a class="ext" href="https://www.justwatch.com/br/filme/challengers" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="br ficcao"><div class="cover c2"><span class="year">2023</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>A Porta ao Lado</h4><p class="meta">Filme · Brasil</p><p class="blurb">Vizinhança, curiosidade e novas configurações afetivas no dia a dia urbano brasileiro — intimista e cheio de ternura.</p><a class="ext" href="https://www.justwatch.com/br/filme/a-porta-ao-lado" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="doc"><div class="cover c5"><span class="year">2023</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Poliamor: A Procura de Mais Um Marido</h4><p class="meta">Doc-série · EUA (TLC)</p><p class="blurb">Documentário acompanha famílias poliamorosas navegando encontros, expectativas e a chegada de um novo parceiro ou parceira.</p><a class="ext" href="https://www.justwatch.com/br/serie/seeking-brother-husband" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="ficcao"><div class="cover c3"><span class="year">2022</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Deep Water (Águas Profundas)</h4><p class="meta">Filme · EUA (Adrian Lyne)</p><p class="blurb">Um casamento em crise se torna laboratório de desejos e limites nesta adaptação eletrizante de Patricia Highsmith.</p><a class="ext" href="https://www.justwatch.com/br/filme/deep-water" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="br ficcao"><div class="cover c4"><span class="year">2022</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Lov3</h4><p class="meta">Série · Brasil (Amazon Original)</p><p class="blurb">Três mulheres, três relações e as muitas possibilidades do amor contemporâneo numa São Paulo pulsante.</p><a class="ext" href="https://www.justwatch.com/br/serie/lov3" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="ficcao"><div class="cover c6"><span class="year">2021</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Mark, Mary &amp; Outras Pessoas</h4><p class="meta">Filme · EUA (Hannah Marks)</p><p class="blurb">Um casal decide abrir a relação e descobre que os combinados são bem menos simples do que pareciam nas festas de família.</p><a class="ext" href="https://www.justwatch.com/br/filme/mark-mary-some-other-people" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="ficcao"><div class="cover c1"><span class="year">2021</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Poliamor para Principiantes</h4><p class="meta">Filme · Espanha (Fernando Colomo)</p><p class="blurb">Comédia leve e simpática sobre dois casais espanhóis testando acordos nada convencionais entre vizinhos de porta.</p><a class="ext" href="https://www.justwatch.com/br/filme/poliamor-para-principiantes" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="ficcao"><div class="cover c2"><span class="year">2020</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Trigonometry</h4><p class="meta">Série · Reino Unido (BBC)</p><p class="blurb">Duas irmãs, um rapaz e uma casa compartilhada: um arranjo delicado entre afeto, dependência e liberdade.</p><a class="ext" href="https://www.justwatch.com/br/serie/trigonometry" target="_blank" rel="noopener">Onde assistir <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="ficcao"><div class="cover c3"><span class="year">1962</span><div class="glyph"><svg aria-hidden="true"><use href="#i-film"/></svg></div></div><div class="item-body"><h4>Jules e Jim</h4><p class="meta">Filme · França (François Truffaut)</p><p class="blurb">O triângulo amoroso mais citado da história do cinema: liberdade afetiva à beira do Sena, antes mesmo de ganhar nome.</p><a class="ext" href="https://pt.wikipedia.org/wiki/Jules_et_Jim" target="_blank" rel="noopener">Saiba mais <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+          </div>
+        </div>
+
+        <div class="panel tabpanel hidden" id="panel-videos" role="tabpanel" aria-labelledby="tb-videos">
+          <div class="items">
+            <article class="item" data-tags="entrevista tv"><div class="cover c6"><span class="year">TV Brasil</span><div class="glyph"><svg aria-hidden="true"><use href="#i-play"/></svg></div></div><div class="item-body"><h4>Mariana Ribeiro no Sem Censura</h4><p class="meta">Entrevista · TV Brasil</p><p class="blurb">A psicanalista fala como a não-monogamia repensa cuidado, afetos e compromissos — ponto de partida perfeito para entender o tema além do senso comum.</p><a class="ext" href="https://www.youtube.com/watch?v=3QC_Gb19rvk" target="_blank" rel="noopener">Assistir no YouTube <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="debate tv"><div class="cover c3"><span class="year">Globoplay</span><div class="glyph"><svg aria-hidden="true"><use href="#i-play"/></svg></div></div><div class="item-body"><h4>Não Monogamia Sem Regras</h4><p class="meta">Editorial · Globoplay</p><p class="blurb">Dois casais falam sobre liberdade, regras e culpa e dão uma aula prática sobre acordos nas relações não monogâmicas.</p><a class="ext" href="https://globoplay.globo.com/v/13054655/editorial/6eceaaf2-e57b-4a64-a23e-83cac58005e6/" target="_blank" rel="noopener">Assistir no Globoplay <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="radio"><div class="cover c5"><span class="year">Rádio</span><div class="glyph"><svg aria-hidden="true"><use href="#i-play"/></svg></div></div><div class="item-body"><h4>Rádio Escafandro nº116</h4><p class="meta">Episódio · Rádio Escafandro</p><p class="blurb">Uma viagem histórica sobre como as relações humanas foram moldadas ao longo do tempo — contexto perfeito para entender a monogamia como construção.</p><a class="ext" href="https://radioescafandro.com/2024-06-11/116-nao-monogamia-outra-vez/" target="_blank" rel="noopener">Ouvir o episódio <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+            <article class="item" data-tags="jornalismo debate"><div class="cover c1"><span class="year">Podcast</span><div class="glyph"><svg aria-hidden="true"><use href="#i-play"/></svg></div></div><div class="item-body"><h4>Dia dos Namorados e a não monogamia</h4><p class="meta">Podcast · Folha de S.Paulo</p><p class="blurb">Debate jornalístico sobre o futuro dos relacionamentos: a não-monogamia em pauta num dos maiores jornais do país.</p><a class="ext" href="https://www1.folha.uol.com.br/podcasts/2024/06/podcast-debate-a-nao-monogamia-e-o-futuro-dos-relacionamentos.shtml" target="_blank" rel="noopener">Ouvir o podcast <svg aria-hidden="true"><use href="#i-ext"/></svg></a></div></article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONVERSAS ======================= -->
+  <section class="section" id="conversas" aria-labelledby="ttl-conv" style="background:linear-gradient(180deg,transparent,var(--bg2) 10%,var(--bg2) 90%,transparent)">
+    <div class="wrap">
+      <div class="reveal" style="max-width:72ch">
+        <p class="eyebrow">Roda aberta</p>
+        <h2 id="ttl-conv">Converse com quem trilha junto.</h2>
+        <p class="lede">Um espaço sem julgamento para perguntar, contar a sua experiência e aprender com outras jornadas. Toda vivência aqui vale como aula.</p>
+      </div>
+      <div class="debate-strip reveal" role="region" aria-label="Roda do mês">
+        <span class="dt-tag">Roda do mês</span>
+        <p>"Combinados que funcionam": conte qual acordo funciona na sua história — ou pergunte o que quiser saber. Toda experiência ajuda quem está chegando.</p>
+      </div>
+      <div class="seeds reveal" data-fx="rise">
+        <article class="seed"><span class="tag">Combinados</span><h4>Acordos que respiram</h4><p>Regras, contratos e revisões periódicas: como desenhar combinados que acompanham a vida real.</p></article>
+        <article class="seed"><span class="tag">Ciúme</span><h4>Ciúme sem drama</h4><p>Ondas de insegurança fazem parte do caminho. O convite é olhá-las com curiosidade, sem culpa.</p></article>
+        <article class="seed"><span class="tag">Redes</span><h4>Famílias escolhidas</h4><p>Amizades profundas, redes de cuidado e criações familiares fora do roteiro padrão.</p></article>
+      </div>
+      <div class="note-owl reveal"><span class="owl" aria-hidden="true"><svg><use href="#i-owl"/></svg></span>
+        <p><b>A coruja da casa lembra</b>Ninguém precisa saber tudo de antemão. Perguntas ingênuas são muito bem-vindas; julgamento, não.</p>
+      </div>
+      <div class="thread reveal" id="thread" aria-label="Conversa recente">
+        <article class="msg"><span class="avatar" aria-hidden="true">MR</span><div><div class="head"><span class="nm">Marina R.</span><span class="tm">há 2 dias</span></div><p>Estamos nos abrindo devagar e descobrindo combinados novos a cada semana. Como vocês agem quando percebem que um acordo já não faz mais sentido?</p></div></article>
+        <article class="msg"><span class="avatar av2" aria-hidden="true">TK</span><div><div class="head"><span class="nm">Theo K.</span><span class="tm">há 1 dia</span></div><p>Instituímos uma "revisão de rota" de 20 minutos por semana, sem celular por perto. Vale mais ouvir do que responder. E rever acordo nunca foi fracasso por aqui — é manutenção.</p></div></article>
+        <article class="msg"><span class="avatar av3" aria-hidden="true">AV</span><div><div class="head"><span class="nm">Aisha V.</span><span class="tm">hoje</span></div><p>Adoro a ideia da revisão semanal. Aqui usamos também um "semáforo emocional": verde tá tudo certo, amarelo chama conversa, vermelho pede pausa até acalmar. Salvou nossa rotina.</p></div></article>
+      </div>
+      <div class="form-block reveal">
+        <form id="forumForm" novalidate>
+          <label class="lbl" for="msgInput">Deixe sua pergunta, resposta ou desabafo:</label>
+          <textarea id="msgInput" name="mensagem" rows="3" placeholder="Escreva aqui o que você quer conversar…" maxlength="600"></textarea>
+          <div style="display:flex;gap:12px;align-items:center;margin-top:12px;flex-wrap:wrap">
+            <button class="btn primary small" type="submit">Enviar para a roda</button>
+            <p class="status" id="forumStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FAQ ======================= -->
+  <section class="section" id="faq" aria-labelledby="ttl-faq">
+    <div class="wrap">
+      <div class="reveal" style="max-width:72ch">
+        <p class="eyebrow">Sem enrolação</p>
+        <h2 id="ttl-faq">Perguntas frequentes.</h2>
+        <p class="lede">As dúvidas que mais aparecem nas rodas — respondidas com franqueza e sem jargão acadêmico.</p>
+        <p class="faq-hint">✦ Toque na pergunta para abrir a resposta</p>
+      </div>
+      <div class="reveal faq-wrap" style="margin-top:30px">
+        <div class="acc"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p1" id="faq-b1"><span class="qnum" aria-hidden="true">01</span>Preciso estar em alguma configuração específica para ser não-monogâmico?<span class="sign" aria-hidden="true"></span></button><div class="acc-panel" id="faq-p1" role="region" aria-labelledby="faq-b1"><div class="acc-panel-inner">Não. "Não-monogamia" é um guarda-chuva: abrange relações abertas, poliamor, anarquia relacional, amores livres e muitas outras formas — inclusive pessoas solteiras que se relacionam de maneira plural sem rótulos fixos. O essencial é o pacto livre, informado e revistável entre as pessoas envolvidas.</div></div></div>
+        <div class="acc"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p2" id="faq-b2"><span class="qnum" aria-hidden="true">02</span>Isso é a mesma coisa que traição?<span class="sign" aria-hidden="true"></span></button><div class="acc-panel" id="faq-p2" role="region" aria-labelledby="faq-b2"><div class="acc-panel-inner">Não. Traição tem a ver com quebra de acordo e deslealdade; não-monogamia começa justamente na construção explícita dos combinados — que podem ser ditos, ouvidos e revistos. Em muitos casos, há mais transparência aqui do que em relações monogâmicas convencionais.</div></div></div>
+        <div class="acc"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p3" id="faq-b3"><span class="qnum" aria-hidden="true">03</span>Como trazer esse assunto com minha parceria atual?<span class="sign" aria-hidden="true"></span></button><div class="acc-panel" id="faq-p3" role="region" aria-labelledby="faq-b3"><div class="acc-panel-inner">Comece pela curiosidade, não pelo ultimato. Proponha uma leitura compartilhada deste portal, escutem juntos um episódio de podcast e reserve um tempo longo de conversa — sem exigir decisão imediata. Combine revisões periódicas para continuar a conversa depois.</div></div></div>
+        <div class="acc"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p4" id="faq-b4"><span class="qnum" aria-hidden="true">04</span>Sentir ciúme significa que eu escolhi errado?<span class="sign" aria-hidden="true"></span></button><div class="acc-panel" id="faq-p4" role="region" aria-labelledby="faq-b4"><div class="acc-panel-inner">De jeito nenhum. Ciúme é uma emoção humana comum, independentemente do formato da relação — ele pode aparecer mesmo onde tudo funciona bem. Ferramentas como a revisão semanal e o "semáforo emocional" ajudam a atravessá-lo sem drama e com curiosidade.</div></div></div>
+        <div class="acc"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p5" id="faq-b5"><span class="qnum" aria-hidden="true">05</span>E quando o ritmo de nós dois é diferente?<span class="sign" aria-hidden="true"></span></button><div class="acc-panel" id="faq-p5" role="region" aria-labelledby="faq-b5"><div class="acc-panel-inner">Assimetria é normal no caminho. Combinações podem ser revistas e renovadas quantas vezes forem necessárias; ninguém deve ser apressado. Cuidado ético é equilibrar o direito de pedir clareza sobre si com o respeito ao tempo da outra pessoa.</div></div></div>
+        <div class="acc"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p6" id="faq-b6"><span class="qnum" aria-hidden="true">06</span>Existe respaldo legal para esses arranjos no Brasil?<span class="sign" aria-hidden="true"></span></button><div class="acc-panel" id="faq-p6" role="region" aria-labelledby="faq-b6"><div class="acc-panel-inner">As normas civis hoje ainda são organizadas em pares, mas famílias plurais existem e vêm ganhando reconhecimento em decisões pontuais. Para questões concretas — patrimônio, saúde, guarda — vale buscar orientação jurídica especializada e registrar os acordos que fizerem sentido para vocês.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<button class="fab" id="btt" type="button" aria-label="Voltar ao início"><svg aria-hidden="true"><use href="#i-up"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js" defer></script>
+</body>
+</html>
